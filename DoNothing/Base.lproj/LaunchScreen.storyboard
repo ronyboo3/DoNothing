@@ -24,12 +24,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_wood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6ax-oB-t7a">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESENTED BY BOTTOWN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUh-ki-2PZ">
+                                <rect key="frame" x="16" y="626" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="aNv-Ow-hoN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="6ax-oB-t7a" secondAttribute="trailing" id="5Us-Lv-Rq1"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="6ax-oB-t7a" secondAttribute="bottom" id="TeJ-2u-HzR"/>
+                            <constraint firstAttribute="trailing" secondItem="vUh-ki-2PZ" secondAttribute="trailing" constant="16" id="Urw-ip-YIS"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="vUh-ki-2PZ" secondAttribute="bottom" constant="20" id="cOW-sr-TU3"/>
                             <constraint firstItem="6ax-oB-t7a" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="cbU-xb-aMM"/>
+                            <constraint firstItem="vUh-ki-2PZ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="16" id="d6y-xj-YBz"/>
                             <constraint firstItem="6ax-oB-t7a" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vL4-ZE-zzV"/>
                         </constraints>
                     </view>

@@ -15,16 +15,27 @@ class ViewController: UIViewController {
     var buttonEnabled = true
     
     var audioPlayer: AVAudioPlayer?
+    var bgmPlayer: AVAudioPlayer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         set()
         
-        let sound_data = URL(fileURLWithPath: Bundle.main.path(forResource: "button2", ofType: "mp3")!)
+        guard let buttonSoundPath = Bundle.main.path(forResource: "button", ofType: "mp3"),
+            let bgmPath = Bundle.main.path(forResource: "bgm", ofType: "mp3") else {
+            return
+        }
+        
+        let buttonSoundUrl = URL(fileURLWithPath: buttonSoundPath)
+        let bgmUrl = URL(fileURLWithPath: bgmPath)
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: sound_data)
+            audioPlayer = try AVAudioPlayer(contentsOf: buttonSoundUrl)
             audioPlayer?.prepareToPlay()
             audioPlayer?.volume = 3.0
+            bgmPlayer = try AVAudioPlayer(contentsOf: bgmUrl)
+            bgmPlayer?.prepareToPlay()
+            bgmPlayer?.numberOfLoops = -1
+            bgmPlayer?.play()
         } catch {}
     }
 
@@ -32,6 +43,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func returnAction(segue: UIStoryboardSegue) {}
     
     func set() {
         button.setImage(UIImage(named: "pushButton_maru.png"), for: .normal)

@@ -12,16 +12,12 @@
 		0E14A7361DD48B6F009D76A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E14A7341DD48B6F009D76A7 /* Main.storyboard */; };
 		0E14A7381DD48B6F009D76A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E14A7371DD48B6F009D76A7 /* Assets.xcassets */; };
 		0E14A73B1DD48B6F009D76A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E14A7391DD48B6F009D76A7 /* LaunchScreen.storyboard */; };
-		0E14A7441DD495A0009D76A7 /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E14A7431DD495A0009D76A7 /* button.mp3 */; };
-		0E14A7471DD49913009D76A7 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E14A7461DD49913009D76A7 /* background.jpg */; };
-		0E4F37071E35FCFA006B919C /* pushButton_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37061E35FCFA006B919C /* pushButton_green.png */; };
-		0E4F37091E35FD1E006B919C /* pushButton_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37081E35FD1E006B919C /* pushButton_h.png */; };
 		0E4F370B1E360464006B919C /* background_wood.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F370A1E360464006B919C /* background_wood.jpg */; };
 		0E4F370F1E3605AA006B919C /* pushButton_maru.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F370D1E3605AA006B919C /* pushButton_maru.png */; };
 		0E4F37131E360751006B919C /* pushButton_maru_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37121E360751006B919C /* pushButton_maru_h.png */; };
-		0E4F37151E361307006B919C /* Wood Pattern-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37141E361307006B919C /* Wood Pattern-2.jpg */; };
-		0E4F37171E36135B006B919C /* Wood Pattern-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37161E36135B006B919C /* Wood Pattern-3.jpg */; };
-		0E4F37191E3615C3006B919C /* button2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37181E3615C3006B919C /* button2.mp3 */; };
+		0E4F37191E3615C3006B919C /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37181E3615C3006B919C /* button.mp3 */; };
+		0E5BD4021E3A15CF0057C95F /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BD4011E3A15CF0057C95F /* bgm.mp3 */; };
+		0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,16 +28,12 @@
 		0E14A7371DD48B6F009D76A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E14A73A1DD48B6F009D76A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E14A73C1DD48B6F009D76A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E14A7431DD495A0009D76A7 /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
-		0E14A7461DD49913009D76A7 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
-		0E4F37061E35FCFA006B919C /* pushButton_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_green.png; sourceTree = "<group>"; };
-		0E4F37081E35FD1E006B919C /* pushButton_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_h.png; sourceTree = "<group>"; };
 		0E4F370A1E360464006B919C /* background_wood.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_wood.jpg; sourceTree = "<group>"; };
 		0E4F370D1E3605AA006B919C /* pushButton_maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_maru.png; sourceTree = "<group>"; };
 		0E4F37121E360751006B919C /* pushButton_maru_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_maru_h.png; sourceTree = "<group>"; };
-		0E4F37141E361307006B919C /* Wood Pattern-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood Pattern-2.jpg"; sourceTree = "<group>"; };
-		0E4F37161E36135B006B919C /* Wood Pattern-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wood Pattern-3.jpg"; sourceTree = "<group>"; };
-		0E4F37181E3615C3006B919C /* button2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button2.mp3; sourceTree = "<group>"; };
+		0E4F37181E3615C3006B919C /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
+		0E5BD4011E3A15CF0057C95F /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
+		0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				0E14A7301DD48B6F009D76A7 /* AppDelegate.swift */,
-				0E14A7321DD48B6F009D76A7 /* ViewController.swift */,
-				0E14A7341DD48B6F009D76A7 /* Main.storyboard */,
+				0E981B6B1E3A18950077FF1D /* 画面 */,
 				0E14A7371DD48B6F009D76A7 /* Assets.xcassets */,
 				0E14A7391DD48B6F009D76A7 /* LaunchScreen.storyboard */,
 				0E14A73C1DD48B6F009D76A7 /* Info.plist */,
@@ -89,8 +80,8 @@
 		0E14A7421DD4958A009D76A7 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				0E14A7431DD495A0009D76A7 /* button.mp3 */,
-				0E4F37181E3615C3006B919C /* button2.mp3 */,
+				0E4F37181E3615C3006B919C /* button.mp3 */,
+				0E5BD4011E3A15CF0057C95F /* bgm.mp3 */,
 			);
 			name = Sounds;
 			sourceTree = "<group>";
@@ -98,16 +89,21 @@
 		0E14A7451DD498E8009D76A7 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				0E14A7461DD49913009D76A7 /* background.jpg */,
-				0E4F37081E35FD1E006B919C /* pushButton_h.png */,
-				0E4F37161E36135B006B919C /* Wood Pattern-3.jpg */,
-				0E4F37061E35FCFA006B919C /* pushButton_green.png */,
 				0E4F37121E360751006B919C /* pushButton_maru_h.png */,
 				0E4F370D1E3605AA006B919C /* pushButton_maru.png */,
-				0E4F37141E361307006B919C /* Wood Pattern-2.jpg */,
 				0E4F370A1E360464006B919C /* background_wood.jpg */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		0E981B6B1E3A18950077FF1D /* 画面 */ = {
+			isa = PBXGroup;
+			children = (
+				0E14A7341DD48B6F009D76A7 /* Main.storyboard */,
+				0E14A7321DD48B6F009D76A7 /* ViewController.swift */,
+				0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */,
+			);
+			name = "画面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,19 +166,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E14A7441DD495A0009D76A7 /* button.mp3 in Resources */,
-				0E4F37191E3615C3006B919C /* button2.mp3 in Resources */,
+				0E4F37191E3615C3006B919C /* button.mp3 in Resources */,
 				0E4F370F1E3605AA006B919C /* pushButton_maru.png in Resources */,
-				0E4F37071E35FCFA006B919C /* pushButton_green.png in Resources */,
 				0E4F37131E360751006B919C /* pushButton_maru_h.png in Resources */,
-				0E14A7471DD49913009D76A7 /* background.jpg in Resources */,
 				0E14A73B1DD48B6F009D76A7 /* LaunchScreen.storyboard in Resources */,
-				0E4F37151E361307006B919C /* Wood Pattern-2.jpg in Resources */,
 				0E4F370B1E360464006B919C /* background_wood.jpg in Resources */,
-				0E4F37171E36135B006B919C /* Wood Pattern-3.jpg in Resources */,
 				0E14A7381DD48B6F009D76A7 /* Assets.xcassets in Resources */,
 				0E14A7361DD48B6F009D76A7 /* Main.storyboard in Resources */,
-				0E4F37091E35FD1E006B919C /* pushButton_h.png in Resources */,
+				0E5BD4021E3A15CF0057C95F /* bgm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E14A7331DD48B6F009D76A7 /* ViewController.swift in Sources */,
+				0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */,
 				0E14A7311DD48B6F009D76A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

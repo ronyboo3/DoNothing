@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_wood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-fb-0o4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_wood.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-fb-0o4">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsF-Yv-s4m">
@@ -37,6 +37,17 @@
                                     <action selector="tappedButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GMJ-dn-Ti6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qv-Mz-nMU">
+                                <rect key="frame" x="337" y="625" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="WeV-1X-YIK"/>
+                                    <constraint firstAttribute="height" constant="22" id="xqU-7o-EdV"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="s3W-3e-m1e" kind="modal" modalTransitionStyle="flipHorizontal" id="yvQ-nX-jha"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -46,6 +57,8 @@
                             <constraint firstItem="EMo-fb-0o4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z5G-nJ-WWC"/>
                             <constraint firstAttribute="trailing" secondItem="EMo-fb-0o4" secondAttribute="trailing" id="Zxi-2Q-4Yx"/>
                             <constraint firstItem="hsF-Yv-s4m" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="h8U-6I-teZ"/>
+                            <constraint firstAttribute="trailing" secondItem="4qv-Mz-nMU" secondAttribute="trailing" constant="16" id="rTt-ho-5J1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4qv-Mz-nMU" secondAttribute="bottom" constant="20" id="rZz-e9-wZg"/>
                         </constraints>
                     </view>
                     <connections>
@@ -55,6 +68,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="244" y="338.68065967016497"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="fTc-rF-hzK">
+            <objects>
+                <viewController id="s3W-3e-m1e" customClass="InfoViewController" customModule="DoNothing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y8i-9C-FUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="ntf-PE-28K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ruZ-CD-i5X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRg-Jp-VG3">
+                                <rect key="frame" x="313" y="617" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0H5-4z-JKy"/>
+                                    <constraint firstAttribute="width" constant="46" id="5Xg-m4-xid"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="rem-FJ-aBi" kind="unwind" unwindAction="returnActionWithSegue:" id="bq8-i7-mA0"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bmf-rt-ia9">
+                                <rect key="frame" x="16" y="58" width="343" height="551"/>
+                                <string key="text">-このアプリについて-
+
+
+このアプリは名前の通り、何もしません。
+
+ボタンを押して、数秒後にまたボタンが押せるようになるだけです。
+
+何回もボタンを押したからといって、何か起こるわけでもありません。
+
+このアプリの目的は、睡眠誘導です。
+ただ何も考えずにボタンを押す作業が、あなたを眠りに誘ってくれます。</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ntf-PE-28K" firstAttribute="top" secondItem="pRg-Jp-VG3" secondAttribute="bottom" constant="20" id="13o-NT-Qbw"/>
+                            <constraint firstItem="pRg-Jp-VG3" firstAttribute="top" secondItem="Bmf-rt-ia9" secondAttribute="bottom" constant="8" id="7Bi-ad-Sv1"/>
+                            <constraint firstAttribute="trailing" secondItem="pRg-Jp-VG3" secondAttribute="trailing" constant="16" id="FJ8-jV-6ci"/>
+                            <constraint firstItem="Bmf-rt-ia9" firstAttribute="top" secondItem="y8i-9C-FUS" secondAttribute="bottom" constant="38" id="NAq-Oh-RZm"/>
+                            <constraint firstAttribute="trailing" secondItem="Bmf-rt-ia9" secondAttribute="trailing" constant="16" id="UYV-F4-ZuD"/>
+                            <constraint firstItem="Bmf-rt-ia9" firstAttribute="leading" secondItem="ruZ-CD-i5X" secondAttribute="leading" constant="16" id="ge9-NH-74C"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JFs-04-T16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="rem-FJ-aBi" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1098.4000000000001" y="339.58020989505252"/>
         </scene>
     </scenes>
     <resources>
