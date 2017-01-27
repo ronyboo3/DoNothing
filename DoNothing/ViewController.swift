@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         set()
         
         guard let buttonSoundPath = Bundle.main.path(forResource: "button", ofType: "mp3"),
@@ -37,6 +38,11 @@ class ViewController: UIViewController {
             bgmPlayer?.numberOfLoops = -1
             bgmPlayer?.play()
         } catch {}
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        GATrackingManager.sendScreenTracking(screenName: "メイン")
     }
 
     override func didReceiveMemoryWarning() {

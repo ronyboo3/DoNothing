@@ -45,7 +45,7 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <segue destination="s3W-3e-m1e" kind="modal" modalTransitionStyle="flipHorizontal" id="yvQ-nX-jha"/>
+                                    <segue destination="s3W-3e-m1e" kind="modal" modalTransitionStyle="crossDissolve" id="yvQ-nX-jha"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,12 +102,13 @@
 
 このアプリは名前の通り、何もしません。
 
-ボタンを押して、数秒後にまたボタンが押せるようになるだけです。
+画面中央にあるボタンを押して、数秒後にまたそのボタンが押せるようになるだけです。
 
 何回もボタンを押したからといって、何か起こるわけでもありません。
 
 このアプリの目的は、睡眠誘導です。
-ただ何も考えずにボタンを押す作業が、あなたを眠りに誘ってくれます。</string>
+ただ何も考えずにボタンを押す作業が、あなたを眠りに誘ってくれます。
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

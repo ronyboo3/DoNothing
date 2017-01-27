@@ -18,6 +18,14 @@
 		0E4F37191E3615C3006B919C /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37181E3615C3006B919C /* button.mp3 */; };
 		0E5BD4021E3A15CF0057C95F /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BD4011E3A15CF0057C95F /* bgm.mp3 */; };
 		0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */; };
+		0EC754361E3ADD3200EE8C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC754351E3ADD3200EE8C50 /* GoogleService-Info.plist */; };
+		0EC754381E3AE29300EE8C50 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC754371E3AE29300EE8C50 /* CoreData.framework */; };
+		0EC7543A1E3AE29D00EE8C50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC754391E3AE29D00EE8C50 /* SystemConfiguration.framework */; };
+		0EC7543C1E3AE2A900EE8C50 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC7543B1E3AE2A900EE8C50 /* libz.tbd */; };
+		0EC7543E1E3AE2B500EE8C50 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC7543D1E3AE2B500EE8C50 /* libsqlite3.tbd */; };
+		0EC754401E3AE45D00EE8C50 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC7543F1E3AE45D00EE8C50 /* AdSupport.framework */; };
+		0EC754421E3AE5CC00EE8C50 /* GATrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC754411E3AE5CC00EE8C50 /* GATrackingManager.swift */; };
+		9BE6BAB82810F9761B7B4ACE /* Pods_DoNothing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65911B4AD657D72BC40625AA /* Pods_DoNothing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +42,17 @@
 		0E4F37181E3615C3006B919C /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
 		0E5BD4011E3A15CF0057C95F /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		0EC754341E3ADB9000EE8C50 /* DoNothing-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DoNothing-Bridging-Header.h"; sourceTree = "<group>"; };
+		0EC754351E3ADD3200EE8C50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0EC754371E3AE29300EE8C50 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0EC754391E3AE29D00EE8C50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0EC7543B1E3AE2A900EE8C50 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		0EC7543D1E3AE2B500EE8C50 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		0EC7543F1E3AE45D00EE8C50 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		0EC754411E3AE5CC00EE8C50 /* GATrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GATrackingManager.swift; sourceTree = "<group>"; };
+		116A7C88B2291B281D816EE4 /* Pods-DoNothing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoNothing.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoNothing/Pods-DoNothing.release.xcconfig"; sourceTree = "<group>"; };
+		65911B4AD657D72BC40625AA /* Pods_DoNothing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoNothing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6720BF42EA36A8FD979234F6 /* Pods-DoNothing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoNothing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoNothing/Pods-DoNothing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +60,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC754401E3AE45D00EE8C50 /* AdSupport.framework in Frameworks */,
+				0EC7543E1E3AE2B500EE8C50 /* libsqlite3.tbd in Frameworks */,
+				0EC7543C1E3AE2A900EE8C50 /* libz.tbd in Frameworks */,
+				0EC7543A1E3AE29D00EE8C50 /* SystemConfiguration.framework in Frameworks */,
+				0EC754381E3AE29300EE8C50 /* CoreData.framework in Frameworks */,
+				9BE6BAB82810F9761B7B4ACE /* Pods_DoNothing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +77,8 @@
 			children = (
 				0E14A72F1DD48B6F009D76A7 /* DoNothing */,
 				0E14A72E1DD48B6F009D76A7 /* Products */,
+				19EE6141840E52D8B019F4CC /* Pods */,
+				E5B841AE66822F6FB0EE0F23 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +100,9 @@
 				0E14A73C1DD48B6F009D76A7 /* Info.plist */,
 				0E14A7451DD498E8009D76A7 /* Images */,
 				0E14A7421DD4958A009D76A7 /* Sounds */,
+				0EC754351E3ADD3200EE8C50 /* GoogleService-Info.plist */,
+				0EC754341E3ADB9000EE8C50 /* DoNothing-Bridging-Header.h */,
+				0EC754411E3AE5CC00EE8C50 /* GATrackingManager.swift */,
 			);
 			path = DoNothing;
 			sourceTree = "<group>";
@@ -106,6 +136,28 @@
 			name = "画面";
 			sourceTree = "<group>";
 		};
+		19EE6141840E52D8B019F4CC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6720BF42EA36A8FD979234F6 /* Pods-DoNothing.debug.xcconfig */,
+				116A7C88B2291B281D816EE4 /* Pods-DoNothing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5B841AE66822F6FB0EE0F23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EC7543F1E3AE45D00EE8C50 /* AdSupport.framework */,
+				0EC7543D1E3AE2B500EE8C50 /* libsqlite3.tbd */,
+				0EC7543B1E3AE2A900EE8C50 /* libz.tbd */,
+				0EC754391E3AE29D00EE8C50 /* SystemConfiguration.framework */,
+				0EC754371E3AE29300EE8C50 /* CoreData.framework */,
+				65911B4AD657D72BC40625AA /* Pods_DoNothing.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0E14A73F1DD48B6F009D76A7 /* Build configuration list for PBXNativeTarget "DoNothing" */;
 			buildPhases = (
+				E31FE3F8A95B71DA1934A883 /* [CP] Check Pods Manifest.lock */,
 				0E14A7291DD48B6F009D76A7 /* Sources */,
 				0E14A72A1DD48B6F009D76A7 /* Frameworks */,
 				0E14A72B1DD48B6F009D76A7 /* Resources */,
+				E83884B6D2D6851DA587AD6E /* [CP] Embed Pods Frameworks */,
+				70EA96EBC91411D2599F36C6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,8 +193,9 @@
 				TargetAttributes = {
 					0E14A72C1DD48B6F009D76A7 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 965THH2LD5;
+						DevelopmentTeam = ZCWH6BR77F;
 						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -168,6 +224,7 @@
 			files = (
 				0E4F37191E3615C3006B919C /* button.mp3 in Resources */,
 				0E4F370F1E3605AA006B919C /* pushButton_maru.png in Resources */,
+				0EC754361E3ADD3200EE8C50 /* GoogleService-Info.plist in Resources */,
 				0E4F37131E360751006B919C /* pushButton_maru_h.png in Resources */,
 				0E14A73B1DD48B6F009D76A7 /* LaunchScreen.storyboard in Resources */,
 				0E4F370B1E360464006B919C /* background_wood.jpg in Resources */,
@@ -179,11 +236,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		70EA96EBC91411D2599F36C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoNothing/Pods-DoNothing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31FE3F8A95B71DA1934A883 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E83884B6D2D6851DA587AD6E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoNothing/Pods-DoNothing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0E14A7291DD48B6F009D76A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EC754421E3AE5CC00EE8C50 /* GATrackingManager.swift in Sources */,
 				0E14A7331DD48B6F009D76A7 /* ViewController.swift in Sources */,
 				0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */,
 				0E14A7311DD48B6F009D76A7 /* AppDelegate.swift in Sources */,
@@ -297,30 +403,40 @@
 		};
 		0E14A7401DD48B6F009D76A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6720BF42EA36A8FD979234F6 /* Pods-DoNothing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = ZCWH6BR77F;
 				INFOPLIST_FILE = DoNothing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronyboo3.DoNothing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronyboo3.DoNothingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "27c94c5f-9e8e-4a9f-9d49-8aa15c9937c6";
+				PROVISIONING_PROFILE_SPECIFIER = DoNothingDevelopment;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)DoNothing/DoNothing-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		0E14A7411DD48B6F009D76A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116A7C88B2291B281D816EE4 /* Pods-DoNothing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = ZCWH6BR77F;
 				INFOPLIST_FILE = DoNothing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ronyboo3.DoNothing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ronyboo3.DoNothingApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "fac9211a-6886-40ac-afe1-64f207fcfb5f";
+				PROVISIONING_PROFILE_SPECIFIER = DoNothingProduction;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(PRODUCT)DoNothing/DoNothing-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

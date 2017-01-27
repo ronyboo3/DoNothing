@@ -15,6 +15,11 @@ class InfoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        GATrackingManager.sendScreenTracking(screenName: "説明画面")
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -1,0 +1,6 @@
+framework module Pods_DoNothing {
+  umbrella header "Pods-DoNothing-umbrella.h"
+
+  export *
+  module * { export * }
+}
