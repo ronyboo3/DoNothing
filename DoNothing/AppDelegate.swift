@@ -23,11 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         assert(configureError == nil, "Error configuring Google services: \(configureError)")
         
         // Optional: configure GAI options.
-        guard let gai = GAI.sharedInstance() else {
-            assert(false, "Google Analytics not configured correctly")
+        if let gai = GAI.sharedInstance() {
+            gai.trackUncaughtExceptions = true  // report uncaught exceptions
+            gai.tracker(withTrackingId: "UA-90988911-1")
         }
-        gai.trackUncaughtExceptions = true  // report uncaught exceptions
-        gai.tracker(withTrackingId: "UA-90988911-1")
         
         return true
     }
