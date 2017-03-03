@@ -65,7 +65,25 @@ class ViewController: UIViewController {
         audioPlayer?.play()
         button.setImage(UIImage(named: "pushButton_maru_h.png"), for: .normal)
         buttonEnabled = false
+        saveTotalTapCount()
+        saveCurrentTapCount()
         enableButton()
+    }
+    
+    func saveCurrentTapCount() {
+        guard let count = UserDefaults.sharedInstance.fetchCurrentTap() else {
+            UserDefaults.sharedInstance.saveCurrentTap(count: 1)
+            return
+        }
+        UserDefaults.sharedInstance.saveCurrentTap(count: count + 1)
+    }
+    
+    func saveTotalTapCount() {
+        guard let count = UserDefaults.sharedInstance.fetchTotalTap() else {
+            UserDefaults.sharedInstance.saveTotalTap(count: 1)
+            return
+        }
+        UserDefaults.sharedInstance.saveTotalTap(count: count + 1)
     }
     
     func enableButton() {
@@ -79,5 +97,11 @@ class ViewController: UIViewController {
         })
     }
 
+}
+
+extension ViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 

@@ -16,6 +16,14 @@
 		0E4F370F1E3605AA006B919C /* pushButton_maru.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F370D1E3605AA006B919C /* pushButton_maru.png */; };
 		0E4F37131E360751006B919C /* pushButton_maru_h.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37121E360751006B919C /* pushButton_maru_h.png */; };
 		0E4F37191E3615C3006B919C /* button.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E4F37181E3615C3006B919C /* button.mp3 */; };
+		0E56854E1E682D5F00679B21 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E56854D1E682D5F00679B21 /* MenuViewController.swift */; };
+		0E5685551E683A7D00679B21 /* AlermSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5685531E683A7D00679B21 /* AlermSettingCell.swift */; };
+		0E5685581E683A9E00679B21 /* SectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5685571E683A9E00679B21 /* SectionViewCell.swift */; };
+		0E56855A1E683ABC00679B21 /* RowViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5685591E683ABC00679B21 /* RowViewCell.swift */; };
+		0E56855C1E683D8100679B21 /* MenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E56855B1E683D8100679B21 /* MenuViewModel.swift */; };
+		0E56855E1E6946A300679B21 /* AlarmTimePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E56855D1E6946A300679B21 /* AlarmTimePickerViewController.swift */; };
+		0E5685601E6946B600679B21 /* AlarmTimePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E56855F1E6946B600679B21 /* AlarmTimePickerViewController.storyboard */; };
+		0E5685631E69791900679B21 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5685621E69791900679B21 /* UserDefaults.swift */; };
 		0E5BD4021E3A15CF0057C95F /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BD4011E3A15CF0057C95F /* bgm.mp3 */; };
 		0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */; };
 		0EC754361E3ADD3200EE8C50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EC754351E3ADD3200EE8C50 /* GoogleService-Info.plist */; };
@@ -40,6 +48,14 @@
 		0E4F370D1E3605AA006B919C /* pushButton_maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_maru.png; sourceTree = "<group>"; };
 		0E4F37121E360751006B919C /* pushButton_maru_h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pushButton_maru_h.png; sourceTree = "<group>"; };
 		0E4F37181E3615C3006B919C /* button.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = button.mp3; sourceTree = "<group>"; };
+		0E56854D1E682D5F00679B21 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		0E5685531E683A7D00679B21 /* AlermSettingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlermSettingCell.swift; sourceTree = "<group>"; };
+		0E5685571E683A9E00679B21 /* SectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionViewCell.swift; sourceTree = "<group>"; };
+		0E5685591E683ABC00679B21 /* RowViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RowViewCell.swift; sourceTree = "<group>"; };
+		0E56855B1E683D8100679B21 /* MenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewModel.swift; sourceTree = "<group>"; };
+		0E56855D1E6946A300679B21 /* AlarmTimePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTimePickerViewController.swift; sourceTree = "<group>"; };
+		0E56855F1E6946B600679B21 /* AlarmTimePickerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AlarmTimePickerViewController.storyboard; sourceTree = "<group>"; };
+		0E5685621E69791900679B21 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		0E5BD4011E3A15CF0057C95F /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		0EC754341E3ADB9000EE8C50 /* DoNothing-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DoNothing-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -94,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				0E14A7301DD48B6F009D76A7 /* AppDelegate.swift */,
+				0E5685611E6978F000679B21 /* 機能 */,
 				0E981B6B1E3A18950077FF1D /* 画面 */,
 				0E14A7371DD48B6F009D76A7 /* Assets.xcassets */,
 				0E14A7391DD48B6F009D76A7 /* LaunchScreen.storyboard */,
@@ -126,9 +143,56 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		0E56854F1E6839C100679B21 /* アラーム画面 */ = {
+			isa = PBXGroup;
+			children = (
+				0E5685501E6839DD00679B21 /* Model */,
+				0E5685511E6839E800679B21 /* View */,
+				0E5685521E6839EF00679B21 /* ViewController */,
+			);
+			name = "アラーム画面";
+			sourceTree = "<group>";
+		};
+		0E5685501E6839DD00679B21 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E56855B1E683D8100679B21 /* MenuViewModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0E5685511E6839E800679B21 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E5685531E683A7D00679B21 /* AlermSettingCell.swift */,
+				0E5685571E683A9E00679B21 /* SectionViewCell.swift */,
+				0E5685591E683ABC00679B21 /* RowViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0E5685521E6839EF00679B21 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0E56854D1E682D5F00679B21 /* MenuViewController.swift */,
+				0E56855D1E6946A300679B21 /* AlarmTimePickerViewController.swift */,
+				0E56855F1E6946B600679B21 /* AlarmTimePickerViewController.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0E5685611E6978F000679B21 /* 機能 */ = {
+			isa = PBXGroup;
+			children = (
+				0E5685621E69791900679B21 /* UserDefaults.swift */,
+			);
+			name = "機能";
+			sourceTree = "<group>";
+		};
 		0E981B6B1E3A18950077FF1D /* 画面 */ = {
 			isa = PBXGroup;
 			children = (
+				0E56854F1E6839C100679B21 /* アラーム画面 */,
 				0E14A7341DD48B6F009D76A7 /* Main.storyboard */,
 				0E14A7321DD48B6F009D76A7 /* ViewController.swift */,
 				0E981B6C1E3A18CD0077FF1D /* InfoViewController.swift */,
@@ -188,7 +252,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "棚瀬 隆太";
 				TargetAttributes = {
 					0E14A72C1DD48B6F009D76A7 = {
@@ -224,6 +288,7 @@
 			files = (
 				0E4F37191E3615C3006B919C /* button.mp3 in Resources */,
 				0E4F370F1E3605AA006B919C /* pushButton_maru.png in Resources */,
+				0E5685601E6946B600679B21 /* AlarmTimePickerViewController.storyboard in Resources */,
 				0EC754361E3ADD3200EE8C50 /* GoogleService-Info.plist in Resources */,
 				0E4F37131E360751006B919C /* pushButton_maru_h.png in Resources */,
 				0E14A73B1DD48B6F009D76A7 /* LaunchScreen.storyboard in Resources */,
@@ -289,10 +354,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E5685551E683A7D00679B21 /* AlermSettingCell.swift in Sources */,
 				0EC754421E3AE5CC00EE8C50 /* GATrackingManager.swift in Sources */,
+				0E56854E1E682D5F00679B21 /* MenuViewController.swift in Sources */,
+				0E5685631E69791900679B21 /* UserDefaults.swift in Sources */,
+				0E56855C1E683D8100679B21 /* MenuViewModel.swift in Sources */,
 				0E14A7331DD48B6F009D76A7 /* ViewController.swift in Sources */,
+				0E56855E1E6946A300679B21 /* AlarmTimePickerViewController.swift in Sources */,
+				0E5685581E683A9E00679B21 /* SectionViewCell.swift in Sources */,
 				0E981B6D1E3A18CD0077FF1D /* InfoViewController.swift in Sources */,
 				0E14A7311DD48B6F009D76A7 /* AppDelegate.swift in Sources */,
+				0E56855A1E683ABC00679B21 /* RowViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,8 +404,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -377,8 +451,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -397,6 +473,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
