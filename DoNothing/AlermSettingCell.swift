@@ -10,6 +10,7 @@ import UIKit
 
 protocol AlermSettingCellDelegate: class {
     func tappedEditButton()
+    func tappedSwitch(isOn: Bool)
 }
 
 class AlermSettingCell: UITableViewCell {
@@ -27,6 +28,10 @@ class AlermSettingCell: UITableViewCell {
         sectionBackgroundView.layer.shadowOffset = CGSize(width: 1.6, height: 1.6)
         sectionBackgroundView.layer.shadowOpacity = 0.5
         editButton.layer.cornerRadius = 5
+        
+        if let alarmIsOn = UserDefaults.sharedInstance.fetchIsSetAlarm() {
+            mainSwitch.isOn = alarmIsOn
+        }
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -60,6 +65,7 @@ class AlermSettingCell: UITableViewCell {
     
     @IBAction func tappedSwitch(sender: UISwitch) {
         updateAlermArea()
+        delegate?.tappedSwitch(isOn: sender.isOn)
     }
     
     @IBAction func tappedEditButton(sender: UIButton) {

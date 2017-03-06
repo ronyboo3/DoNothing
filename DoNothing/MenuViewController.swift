@@ -30,22 +30,41 @@ class MenuViewController: UIViewController {
     
     weak var delegate: MenuViewControllerDelegate?
     
-    var currentSettingTime = ""
+    var currentSettingTime = "10:00"
+    var alarmIsOn = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableView.delegate = self
         tableView.dataSource = self
-
+        
+        fetchIsSetAlarm()
+        fetchAlarmSetTime()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
+    func fetchAlarmSetTime() {
+        guard let setTime = UserDefaults.sharedInstance.fetchAlarmTime() else {
+            return
+        }
+        currentSettingTime = setTime
+    }
+    
+    func fetchIsSetAlarm() {
+        guard let isSetAlarm = UserDefaults.sharedInstance.fetchIsSetAlarm() else {
+            return
+        }
+        alarmIsOn = isSetAlarm
+    }
+    
     @IBAction func tappedDone(sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
+        UserDefaults.sharedInstance.saveAlarmTime(time: currentSettingTime)
+        UserDefaults.sharedInstance.saveIsSetAlarm(isOn: alarmIsOn)
         delegate?.tappedDone()
     }
 
@@ -100,9 +119,17 @@ extension MenuViewController: UITableViewDataSource {
             case RowViewCellRows.totalTapCount.toRow():
                 cell.updateCell(title: RowViewCellRows.totalTapCount.toTitle(), value: "\(UserDefaults.sharedInstance.fetchTotalTap() ?? 0)回")
             case RowViewCellRows.fastestTapTime.toRow():
-                cell.updateCell(title: RowViewCellRows.fastestTapTime.toTitle(), value: "\(UserDefaults.sharedInstance.fetchFastestTapTime() ?? "--")秒")
+                var strTime = "--"
+                if let time = UserDefaults.sharedInstance.fetchFastestTapTime() {
+                    strTime = String(format: "%.2f", Double(time))
+                }
+                cell.updateCell(title: RowViewCellRows.fastestTapTime.toTitle(), value: "\(strTime)秒")
             case RowViewCellRows.latestTapTime.toRow():
-                cell.updateCell(title: RowViewCellRows.latestTapTime.toTitle(), value: "\(UserDefaults.sharedInstance.fetchLatestTapTime() ?? "--")秒")
+                var strTime = "--"
+                if let time = UserDefaults.sharedInstance.fetchLatestTapTime() {
+                    strTime = String(format: "%.2f", Double(time))
+                }
+                cell.updateCell(title: RowViewCellRows.latestTapTime.toTitle(), value: "\(strTime)秒")
             default:
                 cell.updateCell(title: "--", value: "--")
             }
@@ -139,6 +166,10 @@ extension MenuViewController: AlermSettingCellDelegate {
         vc.modalPresentationStyle = .overFullScreen
         vc.delegate = self
         present(vc, animated: true)
+    }
+    
+    func tappedSwitch(isOn: Bool) {
+        alarmIsOn = isOn
     }
 }
 

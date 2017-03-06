@@ -17,6 +17,15 @@ class ViewController: UIViewController {
     var audioPlayer: AVAudioPlayer?
     var bgmPlayer: AVAudioPlayer?
     
+    var timerForVibrate = Timer()
+    var timerForAlarm = Timer()
+    var timerForButtonAction = Timer()
+    
+    var stopVibrate = false
+    var isFirstButtonTap = true
+    
+    var actionTime: CGFloat = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,6 +52,11 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         GATrackingManager.sendScreenTracking(screenName: "メイン")
+        
+        if let _ = UserDefaults.sharedInstance.fetchIsSetAlarm() {
+            timerForAlarm = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(self.checkAlarm(_:)), userInfo: nil, repeats: true)
+            timerForAlarm.fire()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,6 +69,41 @@ class ViewController: UIViewController {
     func set() {
         button.setImage(UIImage(named: "pushButton_maru.png"), for: .normal)
         button.setImage(UIImage(named: "pushButton_maru_h.png"), for: .highlighted)
+    }
+    
+    func checkAlarm(_ sender: Timer) {
+        guard let setTime = UserDefaults.sharedInstance.fetchAlarmTime() else {
+            return
+        }
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        if setTime == formatter.string(from: Date()) {
+            callAlarm()
+        }
+    }
+    
+    func callAlarm() {
+        timerForVibrate = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.vibrate(_:)), userInfo: nil, repeats: true)
+        timerForVibrate.fire()
+        
+        let ac = UIAlertController(title: "アラーム", message: "おはようございます", preferredStyle: .alert)
+        let okAction: UIAlertAction = UIAlertAction(title: "OK", style: .default, handler:{
+            (action: UIAlertAction!) -> Void in
+            self.timerForVibrate.invalidate()
+            self.timerForAlarm.invalidate()
+            self.stopVibrate = true
+            UserDefaults.sharedInstance.removeIsSetAlarm()
+        })
+        ac.addAction(okAction)
+        present(ac, animated: true, completion: nil)
+    }
+    
+    func vibrate(_ sender: Timer) {
+        if stopVibrate {
+            return
+        }
+        AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
     }
 
     @IBAction func tappedButton(_ sender: UIButton) {
@@ -87,6 +136,22 @@ class ViewController: UIViewController {
     }
     
     func enableButton() {
+        timerForButtonAction.invalidate()
+        if !isFirstButtonTap {
+            if let fastestTime = UserDefaults.sharedInstance.fetchFastestTapTime(),
+                let latestTime = UserDefaults.sharedInstance.fetchLatestTapTime() {
+                if fastestTime > actionTime {
+                    UserDefaults.sharedInstance.saveFastestTapTime(time: actionTime)
+                } else if latestTime < actionTime {
+                    UserDefaults.sharedInstance.saveLatestTapTime(time: actionTime)
+                }
+            } else {
+                UserDefaults.sharedInstance.saveFastestTapTime(time: actionTime)
+                UserDefaults.sharedInstance.saveLatestTapTime(time: actionTime)
+            }
+        }
+        isFirstButtonTap = false
+        
         let n = arc4random() % 10 + 1
         let delay = Double(n) * Double(NSEC_PER_SEC)
         let time  = DispatchTime.now() + Double(Int64(delay)) / Double(NSEC_PER_SEC)
@@ -94,7 +159,13 @@ class ViewController: UIViewController {
             self.audioPlayer?.play()
             self.button.setImage(UIImage(named: "pushButton_maru.png"), for: .normal)
             self.buttonEnabled = true
+            self.timerForButtonAction = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(self.measureTime(_:)), userInfo: nil, repeats: true)
+            self.timerForButtonAction.fire()
         })
+    }
+    
+    func measureTime(_ sender: Timer) {
+        actionTime += 0.01
     }
 
 }

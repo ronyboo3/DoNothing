@@ -30,8 +30,8 @@ final class UserDefaults {
         userDefaults.set(time, forKey: "alarmTime")
         userDefaults.synchronize()
     }
-    func fetchAlarmTime() -> Bool? {
-        return userDefaults.object(forKey: "alarmTime") as? Bool
+    func fetchAlarmTime() -> String? {
+        return userDefaults.object(forKey: "alarmTime") as? String
     }
     func removeAlarmTime() {
         userDefaults.removeObject(forKey: "alarmTime")
@@ -52,12 +52,12 @@ final class UserDefaults {
     }
 
     // ボタンがアクティブになってからまたタップするまでの最速時間
-    func saveFastestTapTime(time: String) {
+    func saveFastestTapTime(time: CGFloat) {
         userDefaults.set(time, forKey: "fastestTapTime")
         userDefaults.synchronize()
     }
-    func fetchFastestTapTime() -> String? {
-        return userDefaults.object(forKey: "fastestTapTime") as? String
+    func fetchFastestTapTime() -> CGFloat? {
+        return userDefaults.object(forKey: "fastestTapTime") as? CGFloat
     }
     func removeFastestTapTime() {
         userDefaults.removeObject(forKey: "fastestTapTime")
@@ -65,12 +65,12 @@ final class UserDefaults {
     }
     
     // ボタンがアクティブになってからまたタップするまでの最遅時間
-    func saveLatestTapTime(time: String) {
+    func saveLatestTapTime(time: CGFloat) {
         userDefaults.set(time, forKey: "latestTapTime")
         userDefaults.synchronize()
     }
-    func fetchLatestTapTime() -> String? {
-        return userDefaults.object(forKey: "latestTapTime") as? String
+    func fetchLatestTapTime() -> CGFloat? {
+        return userDefaults.object(forKey: "latestTapTime") as? CGFloat
     }
     func removeLatestTapTime() {
         userDefaults.removeObject(forKey: "latestTapTime")
